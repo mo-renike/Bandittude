@@ -1,39 +1,51 @@
-
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -100px 0px"
+  rootMargin: "0px 0px -100px 0px",
 };
 
-const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll){
-  entries.forEach(entry => {
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      return
+      return;
     } else {
       entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
     }
-  })
-  
-},appearOptions);
+  });
+},
+appearOptions);
 
-faders.forEach(fader => {
+faders.forEach((fader) => {
   appearOnScroll.observe(fader);
-})
+});
 
-sliders.forEach(slider => {
+sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
   // console.log(slider)
-})
+});
 
-
- function show(){
-alert ("Thank you for submitting. Your message has been recieved and a reply would be sent shortly.");
+function show() {
+  alert(
+    "Thank you for submitting. Your message has been recieved and a reply would be sent shortly."
+  );
 }
 
+$(".carousel").carousel({
+  interval: 2000,
+});
 
-$('.carousel').carousel({
-  interval: 2000
-})
+const toggle = () => {
+  const toggler = document.querySelector(".toggler");
+  const nav = document.querySelector(".nav-links");
+
+  toggler.addEventListener("click", () => {
+     nav.classList.toggle("show")
+    });
+};
+toggle();

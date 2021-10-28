@@ -1,5 +1,5 @@
 const toggle = () => {
-  const burger = document.querySelector("toggler");
+  const burger = document.querySelector(".toggler");
   const nav = document.querySelector(".nav-links");
   const navItems = document.querySelectorAll(".nav-link");
   burger.addEventListener("click", () => {

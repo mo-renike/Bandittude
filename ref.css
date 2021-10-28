@@ -84,7 +84,6 @@ form {
   background: none;
 }
 
-
 .about-container {
   padding: 20px;
   text-align: center;
@@ -180,18 +179,18 @@ figcaption {
   padding: 5px;
   border: none;
 }
-
-.button {
+.button,
+.social-links a {
   background-color: #ff0064;
   color: #ffffff;
   padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 1.5em auto;
   text-decoration: none;
   font-weight: bold;
 }
 
-.button:hover {
+.button:hover , .social-links a:hover{
   background-color: #efefef;
   color: #ff0064;
 }
@@ -283,25 +282,24 @@ audio {
   font-style: normal;
 }
 
-.pagefooter .newsletter-form input[type="email"] {
-  width: 50%;
-  padding: 20px;
+.newsletter-form {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+.newsletter-form input[type="email"] {
+  width: 70%;
   border: none;
   background: #353535;
   color: white;
+  padding: 10px;
   outline: none;
 }
 
-.pagefooter .newsletter-form input[type="email"]:hover,
-.pagefooter .newsletter-form input[type="email"]:focus {
+.newsletter-form input[type="email"]:hover,
+.newsletter-form input[type="email"]:focus {
   background: #4f4f4f;
-}
-
-.pagefooter .newsletter-form input[type="submit"] {
-  width: 50%;
-  padding: 20px;
-  position: relative;
-  text-align: center;
 }
 
 .copyright {
@@ -315,7 +313,6 @@ audio {
   padding: 20px;
   background-color: #050505;
 }
-
 @media only screen and (max-width: 800px) {
   .toggler {
     display: block;

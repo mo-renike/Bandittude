@@ -11,7 +11,6 @@ body {
   font-size: 18px;
 }
 
-
 h1 {
   font-size: 4em;
 }
@@ -83,7 +82,7 @@ form {
   cursor: pointer;
   text-decoration: none;
 }
-.toggler:hover{
+.toggler:hover {
   color: #ff0064;
 }
 
@@ -95,8 +94,7 @@ form {
 } */
 
 .about-container {
-  background-color: #1f1f1f;
-  padding: 50px;
+  padding: 20px;
   text-align: center;
 }
 .about {
@@ -113,19 +111,18 @@ form {
   width: auto;
   text-align: center;
 }
+.carousel .carousel-item img {
+  opacity: 0.2;
+}
 
 .carousel-caption {
   /* background-color: rgba(0, 0, 0, 0.8); */
   border-radius: 20px;
   top: 0;
 }
-.carousel-caption h2 {
-  font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+.carousel-caption h2,
 .carousel-caption h3 {
   font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* ............................animations   ................................. */
@@ -196,7 +193,7 @@ figcaption {
 .button {
   background-color: #ff0064;
   color: #ffffff;
-  padding: .8em 2em;
+  padding: 0.5rem;
   border-radius: 5px;
   margin: 1.5em auto;
   text-decoration: none;
@@ -260,8 +257,6 @@ audio {
   background-color: #0f0f0f;
 }
 .pop-up {
-  font-size: 25px;
-  font-weight: 700;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .pagefooter {
@@ -353,9 +348,9 @@ audio {
     margin: 1em auto;
   }
   .show {
-  display: flex;
-}
-.about {
-  width: 100%;
-}
+    display: flex;
+  }
+  .about {
+    width: 100%;
+  }
 }

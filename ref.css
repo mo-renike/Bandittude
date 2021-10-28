@@ -135,7 +135,7 @@ form {
   padding: 30px;
   border-radius: 20px;
   background: #1f1f1f;
-  box-shadow: 6px 6px 10px #111111, -6px -6px 10px #121212;
+  box-shadow: 1px 2px 4px #111111, -1px -4px 4px #121212;
 }
 
 .contact-form input {
@@ -147,7 +147,7 @@ form {
   outline: none;
   border-radius: 20px;
   background: #1f1f1f;
-  box-shadow: inset 6px 6px 10px #1e1e1e, inset -6px -6px 10px #111111;
+  box-shadow: inset 1px 2px 3px #1e1e1e, inset -1px -2px 3px #111111;
 }
 
 .textarea {

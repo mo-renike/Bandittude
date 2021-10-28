@@ -135,19 +135,19 @@ form {
   padding: 30px;
   border-radius: 20px;
   background: #1f1f1f;
-  box-shadow: 1px 2px 4px #111111, -1px -4px 4px #121212;
+  box-shadow: 1px 2px 2px #111111, -1px -2px 2px #121212;
 }
 
 .contact-form input {
   color: white;
   padding: 20px;
-  border-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 7px;
   width: 90%;
   outline: none;
   border-radius: 20px;
   background: #1f1f1f;
-  box-shadow: inset 1px 2px 3px #1e1e1e, inset -1px -2px 3px #111111;
+  /* box-shadow: inset 1px 2px 1px #1e1e1e, inset -1px -1px 1px #111111; */
 }
 
 .textarea {

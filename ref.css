@@ -134,19 +134,19 @@ form {
   border: none;
   padding: 30px;
   border-radius: 20px;
-  background: #1f1f1f;
+  border: 3px solid rgba(0, 0, 0, 0.2);
   box-shadow: 1px 2px 2px #111111, -1px -2px 2px #121212;
 }
 
 .contact-form input {
   color: white;
   padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 7px;
   width: 90%;
   outline: none;
   border-radius: 20px;
-  background: #1f1f1f;
+  background: rgba(0, 0, 0, 0.3);
   /* box-shadow: inset 1px 2px 1px #1e1e1e, inset -1px -1px 1px #111111; */
 }
 

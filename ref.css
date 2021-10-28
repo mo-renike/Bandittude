@@ -73,25 +73,17 @@ form {
 }
 
 .logo {
-  width: 3.5rem;
+  width: 3rem;
 }
 .toggler {
   color: #ff0064;
   font-size: 1.4em;
   display: none;
   cursor: pointer;
-  text-decoration: none;
-}
-.toggler:hover {
-  color: #ff0064;
+  border: none;
+  background: none;
 }
 
-/* .container-fluid {
-  background-color: inherit;
-  padding-top: 100px;
-  margin-top: 5px;
-  display: block;
-} */
 
 .about-container {
   padding: 20px;

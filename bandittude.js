@@ -40,6 +40,7 @@ $(".carousel").carousel({
   interval: 2000,
 });
 
+
 const toggle = () => {
   const toggler = document.querySelector(".toggler");
   const nav = document.querySelector(".nav-links");

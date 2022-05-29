@@ -1,17 +1,17 @@
-const toggle = () => {
-  const burger = document.querySelector(".toggler");
-  const nav = document.querySelector(".nav-links");
-  const navItems = document.querySelectorAll(".nav-link");
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("show");
+const burger = document.querySelector("#ham");
+const nav = document.querySelector(".nav");
+const navItems = document.querySelectorAll(".nav-link");
+const navClose = document.querySelector("#close_nav");
+
+burger.addEventListener("click", () => {
+  nav.classList.add("show");
+});
+for (const navItem of navItems) {
+  navItem.addEventListener("click", () => {
+    nav.classList.remove("show");
   });
-  for (const navItem of navItems) {
-    navItem.addEventListener("click", () => {
-      nav.classList.remove("show");
-    });
-  }
-};
-toggle();
+}
+navClose.addEventListener("click", () => nav.classList.remove("show"));
 
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
@@ -51,6 +51,14 @@ function show() {
   );
 }
 
-$(".carousel").carousel({
-  interval: 2000,
-});
+// Sticky Navbar
+const navbar = document.querySelector(".header");
+let sticky = navbar.offsetTop;
+const navbarScroll = () => {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};
+window.onscroll = navbarScroll;

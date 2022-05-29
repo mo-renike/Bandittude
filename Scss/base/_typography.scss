@@ -1,0 +1,36 @@
+@import url('http://fonts.cdnfonts.com/css/butler');
+@import url('http://fonts.cdnfonts.com/css/meiland-gorgeous');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&family=Square+Peg&display=swap');
+@import url('http://fonts.cdnfonts.com/css/orffela');
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: .7rem auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1.2px;
+  // font-family: $bold;
+  // font-weight: 100;
+  font-family: 'Meiland Gorgeous', sans-serif;
+                                                
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 6rem;
+  font-family: $cursive-font;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+

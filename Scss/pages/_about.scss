@@ -1,0 +1,26 @@
+.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 3rem;
+
+    &__text {
+
+    }
+
+    &__img {
+        overflow: hidden;
+        box-shadow: $box-shadow;
+        border: 1px solid $dark;
+        border-radius: $border-radius;
+        height: fit-content;
+
+        img {
+            transition: $transition;
+            border-radius: inherit;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.slide-left {
+	font-family: 'arial black';
+	font-size: 2rem;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-left: 50%;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slide-in-anim 1.1s ease-out forwards;
+}
+
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+		transform: translateX(-102%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes rotate {
+	50% {
+		transform: rotate(180deg);
+	}
+}

@@ -1,0 +1,31 @@
+//margin and padding
+
+$spaceamounts : (1, 2, 3, 4, 5, 6);
+@each $space in $spaceamounts {
+    .m-#{$space}{
+        margin: #{$space}em;
+    }
+    .mx-#{$space}{
+        margin: 0 #{$space}em ;
+    }
+    .my-#{$space}{
+        margin: #{$space}em 0;
+    }
+    .p-#{$space}{
+        padding: #{$space}em ;
+    }
+    .px-#{$space}{
+       padding: #{$space}em 0;
+    }
+    .py-#{$space}{
+       padding: #{$space}em 0;
+    }
+    .mt-#{$space}{
+        margin-top: #{$space}em;
+    }
+    .mb-#{$space}{
+        margin-bottom: #{$space}em;
+    }
+}
+
+ 
